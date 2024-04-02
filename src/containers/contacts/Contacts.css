@@ -1,0 +1,32 @@
+.contact-us {
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 50px;
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(43, 43, 43, 0.568);
+  }
+  
+  .contact-info p,
+  .social-media a {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin: 10px 0;
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .contact-form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
