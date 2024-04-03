@@ -4,27 +4,29 @@ import './features.css';
 
 const featuresData = [
   {
-    title: 'Improving end distrusts instantly',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
+    title: 'What Sets Us Apart',
+    text: '• At JT-studio, we are not just developers; we are creators, thinkers, and problem solvers dedicated to excellence. Our expertise lies in crafting scalable and dynamic web applications that not only meet but exceed our clients expectations.',
   },
   {
-    title: 'Become the tended active',
-    text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+    title: 'Our Promise',
+    text: '• Our journey over the past 5 years has been one of continuous learning and improvement. We have helped businesses, from startups to established enterprises, to navigate the digital landscape with ease and confidence.'
   },
   {
-    title: 'Message or am nothing',
-    text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
+    title: 'Our mission',
+    text: '• To transform your visionary ideas into digital realities that stand the test of time.',
   },
   {
-    title: 'Really boy law county',
-    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    title: 'Why Choose Us?',
+    text: '• Choosing JT-studio means choosing a partner who understands the importance of your digital presence. Our approach is simple: listen, understand, and deliver. We take the time to understand your needs, offering personalized solutions that align with your business goals.',
   },
 ];
 
 const Features = () => (
   <div className="gpt3__features section__padding" id="features">
+    
     <div className="gpt3__features-heading">
-      <h1 className="gradient__text">About Company. The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
+    <h1 className="gradient__text">About company.</h1> <br />
+      <h1 className="gradient__text">Welcome to JT-studio, where your digital aspirations take flight. Founded with a zeal for innovation, we've been at the forefront of Turnkey Web Application Development for over 5 years.</h1>
       <p>Request Early Access to Get Started</p>
     </div>
     <div className="gpt3__features-container">
