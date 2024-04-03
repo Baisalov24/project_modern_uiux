@@ -25,7 +25,7 @@ const Features = () => (
   <div className="gpt3__features section__padding" id="features">
     
     <div className="gpt3__features-heading">
-    <h1 className="gradient__text">About company.</h1> <br />
+    <h1 className="gradient__text">About Us.</h1> <br />
       <h1 className="gradient__text">Welcome to JT-studio, where your digital aspirations take flight. Founded with a zeal for innovation, we've been at the forefront of Turnkey Web Application Development for over 5 years.</h1>
       <p>Request Early Access to Get Started</p>
     </div>

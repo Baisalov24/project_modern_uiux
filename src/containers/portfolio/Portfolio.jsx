@@ -2,6 +2,7 @@ import React from "react";
 import portfolioImg from '../../assets/possibility.png'
 import './portfolio.css'
 
+
 const Portfolio = () => {
   return (
     <section className="third-section"  id="portfolio">

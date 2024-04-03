@@ -11,6 +11,7 @@ import { CTA, Brand, Navbar } from "./components";
 import "./App.css";
 import Contacts from "./containers/contacts/Contacts";
 import Portfolio from "./containers/portfolio/Portfolio";
+import Test from "./containers/timeline/Timeline";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <WhatGPT3 />
       {/* <Possibility /> */}
       <Portfolio /> 
-
+     
       <CTA />
       {/* <Contacts /> */}
       <Footer />
