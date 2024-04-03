@@ -2,7 +2,7 @@ import React from 'react';
 import './cta.css';
 
 const CTA = () => (
-  <div className="gpt3__cta">
+  <div className="gpt3__cta" id='contactUs'>
     <div className="gpt3__cta-content">
     <section className="contact-us">
       <h2>Contact Us</h2>

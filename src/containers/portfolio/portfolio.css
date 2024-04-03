@@ -1,0 +1,39 @@
+.third-section {
+    text-align: center; /* Centers the title and subtitle */
+    margin: 100px 0; /* Adds some space above and below the section */
+  }
+  
+  .blocks-container {
+    display: flex;
+    justify-content: center; /* Centers the blocks horizontally */
+    gap: 20px; /* Adds space between the blocks */
+  }
+  
+  .block {
+    width: 200px;
+    height: 250px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content vertically */
+    padding: 10px;
+  
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(43, 43, 43, 0.568);
+  }
+  
+  .block img {
+    max-width: 100%; /* Ensures the image fits within the block */
+    height: auto; /* Maintains the image aspect ratio */
+    margin-bottom: 10px; /* Adds space between the image and its description */
+  }
+  
+  /* Adaptive styling for smaller screens */
+  @media (max-width: 768px) {
+    .blocks-container {
+      flex-direction: column; /* Stacks the blocks vertically */
+    }
+  }

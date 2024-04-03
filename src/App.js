@@ -2,7 +2,7 @@ import React from "react";
 import {
   Footer,
   Blog,
-  Possibility,
+  // Possibility,
   Features,
   WhatGPT3,
   Header,
@@ -10,6 +10,7 @@ import {
 import { CTA, Brand, Navbar } from "./components";
 import "./App.css";
 import Contacts from "./containers/contacts/Contacts";
+import Portfolio from "./containers/portfolio/Portfolio";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <Blog />
       <WhatGPT3 />
       {/* <Possibility /> */}
+      <Portfolio /> 
+
       <CTA />
       {/* <Contacts /> */}
       <Footer />
