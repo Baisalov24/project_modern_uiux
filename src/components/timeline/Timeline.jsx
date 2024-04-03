@@ -1,6 +1,6 @@
 // src/Timeline.js
 import React, { useState, useRef, useEffect } from 'react';
-import './Timeline.css';
+import './timeline.css';
 
 const events = [
   { year: "Design", text: "Event 1", description: "Wireframing: Creating basic layouts of the web pages. UI/UX Design: Designing visual elements and user experience paths.Prototyping: Building clickable prototypes to simulate the user interface." },

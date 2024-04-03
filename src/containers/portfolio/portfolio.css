@@ -1,12 +1,12 @@
 .third-section {
-  text-align: center; /* Centers the title and subtitle */
-  margin: 100px 0; /* Adds some space above and below the section */
+  text-align: center; 
+  margin: 100px 0; 
 }
 
 .blocks-container {
   display: flex;
-  justify-content: center; /* Centers the blocks horizontally */
-  gap: 20px; /* Adds space between the blocks */
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .block {
@@ -15,7 +15,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers the content vertically */
+  align-items: center; 
   padding: 10px;
 
   backdrop-filter: blur(1px);
@@ -26,14 +26,14 @@
 }
 
 .block img {
-  max-width: 100%; /* Ensures the image fits within the block */
-  height: auto; /* Maintains the image aspect ratio */
-  margin-bottom: 10px; /* Adds space between the image and its description */
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 10px; 
 }
 
 /* Adaptive styling for smaller screens */
 @media (max-width: 768px) {
   .blocks-container {
-    flex-direction: column; /* Stacks the blocks vertically */
+    flex-direction: column; 
   }
 }

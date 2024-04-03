@@ -1,14 +1,14 @@
 import React from "react";
 import {
   Footer,
-  Blog,
+  Services,
   AboutCompany,
-  WhatGPT3,
+  AppLifecycle,
   Header,
   Contacts,
   Portfolio,
 } from "./containers";
-import { Brand, Navbar } from "./components";
+import { Tools, Navbar } from "./components";
 import "./App.css";
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
         <Header />
       </div>
       <AboutCompany />
-      <Brand />
-      <Blog />
-      <WhatGPT3 />
+      <Tools />
+      <Services />
+      <AppLifecycle />
       <Portfolio />
       <Contacts />
       <Footer />

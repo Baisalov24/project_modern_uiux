@@ -63,13 +63,20 @@
     flex-direction: column;
 }
 
-.gpt3__footer-links_logo img {
+/* .gpt3__footer-links_logo img {
     width: 118px;
     height: 30px;
 
     margin-bottom: 1rem;
-}
+} */
 
+.gpt3__footer-links_logo h1 {
+    font-family: var(--font-family);
+    font-size: 25px;
+    line-height: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+}
 .gpt3__footer-links_logo p {
     font-family: var(--font-family);
     font-size: 12px;
