@@ -15,10 +15,10 @@ const Navbar = () => {
           <a href="#home">Home</a>
         </p>
         <p>
-          <a href="#features">About Company</a>
+          <a href="#company">About Company</a>
         </p>
         <p>
-          <a href="#blog">Servises</a>
+          <a href="#services">Services</a>
         </p>
         <p>
           <a href="#portfolio">Portfolio</a>
@@ -44,25 +44,21 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
-            <p>
-          <a href="#home">Home</a>
-        </p>
-        <p>
-          <a href="#features">About Company</a>
-        </p>
-        <p>
-          <a href="#blog">Servises</a>
-        </p>
-        <p>
-          <a href="#portfolio">Portfolio</a>
-        </p>
-        <p>
-          <a href="#contactUs">Contact us</a>
-        </p>
-            </div>
-            <div className="gpt3__navbar-menu_container-links-sign">
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
+              <p>
+                <a href="#home">Home</a>
+              </p>
+              <p>
+                <a href="#company">About Company</a>
+              </p>
+              <p>
+                <a href="#services">Services</a>
+              </p>
+              <p>
+                <a href="#portfolio">Portfolio</a>
+              </p>
+              <p>
+                <a href="#contactUs">Contact us</a>
+              </p>
             </div>
           </div>
         )}

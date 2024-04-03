@@ -1,11 +1,10 @@
 import React from "react";
-import portfolioImg from '../../assets/possibility.png'
-import './portfolio.css'
-
+import "./portfolio.css";
+import portfolioImg from "../../assets/possibility.png";
 
 const Portfolio = () => {
   return (
-    <section className="third-section"  id="portfolio">
+    <section className="third-section" id="portfolio">
       <h2>Our last projects</h2>
       <p className="subtitle">This is the subtitle.</p>
       <div className="blocks-container">

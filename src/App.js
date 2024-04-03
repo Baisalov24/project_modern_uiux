@@ -2,16 +2,14 @@ import React from "react";
 import {
   Footer,
   Blog,
-  // Possibility,
-  Features,
+  AboutCompany,
   WhatGPT3,
   Header,
+  Contacts,
+  Portfolio,
 } from "./containers";
-import { CTA, Brand, Navbar } from "./components";
+import { Brand, Navbar } from "./components";
 import "./App.css";
-import Contacts from "./containers/contacts/Contacts";
-import Portfolio from "./containers/portfolio/Portfolio";
-import Test from "./containers/timeline/Timeline";
 
 function App() {
   return (
@@ -20,15 +18,12 @@ function App() {
         <Navbar />
         <Header />
       </div>
-      <Features />
+      <AboutCompany />
       <Brand />
       <Blog />
       <WhatGPT3 />
-      {/* <Possibility /> */}
-      <Portfolio /> 
-     
-      <CTA />
-      {/* <Contacts /> */}
+      <Portfolio />
+      <Contacts />
       <Footer />
     </div>
   );
