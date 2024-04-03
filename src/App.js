@@ -10,6 +10,8 @@ import {
 } from "./containers";
 import { Tools, Navbar } from "./components";
 import "./App.css";
+import Content from "./containers/team/Content/Content";
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
       <Services />
       <AppLifecycle />
       <Portfolio />
+      <Content />
       <Contacts />
       <Footer />
     </div>
