@@ -1,8 +1,8 @@
 import React from 'react';
-import Feature from '../../components/feature/Feature';
 import './aboutCompany.css';
+import { CompanyInfo } from '../../components'; 
 
-const featuresData = [
+const companyData = [
   {
     title: 'What Sets Us Apart',
     text: '• At JT-studio, we are not just developers; we are creators, thinkers, and problem solvers dedicated to excellence. Our expertise lies in crafting scalable and dynamic web applications that not only meet but exceed our clients expectations.',
@@ -30,8 +30,8 @@ const AboutCompany = () => (
       <p>Request Early Access to Get Started</p>
     </div>
     <div className="gpt3__features-container">
-      {featuresData.map((item, index) => (
-        <Feature title={item.title} text={item.text} key={item.title + index} />
+      {companyData.map((item, index) => (
+        <CompanyInfo title={item.title} text={item.text} key={item.title + index} />
       ))}
     </div>
   </div>
