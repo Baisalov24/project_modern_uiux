@@ -41,6 +41,7 @@ export const Slider = ({ data }) => {
         {data.map((slide, idx) => (
           <div
             className={`slide${idx === activeId ? ' active' : ''}`}
+            key={idx}
           >
             <div className="slide__info">
               <div className="slide__label">{slide.label}</div>

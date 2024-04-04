@@ -1,41 +1,64 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./contacts.css";
 
-const Contacts = () => (
-  <div className="gpt3__cta" id="contactUs">
-    <div className="gpt3__cta-content">
-      <section className="contact-us">
-        <h2>Contact Us</h2>
-        <p>
-          We love to hear from you. Please drop us a message for any inquiries.
-        </p>
+const Contact = () => {
+  const form = useRef();
 
-        <div className="contact-info">
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4cpcoec",
+        "template_482640h",
+        form.current,
+        "twiSklDAsh06rUA4n"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  return (
+    <div className="form_section" id="contactUs">
+      <div className="form_title">
+        <h1>Contact Us</h1>
+      </div>
+
+      <div className="form_wrapper">
+        <div className="form_left">
+          <h3 className="color_sec py-4">JT-studio</h3>
+          <br />
+          <br />
           <p>
-            <i className="icon-phone"></i> +123 456 7890
+            <strong>Email: jtstudio@gmail.com</strong>
           </p>
           <p>
-            <i className="icon-mail"></i> email@example.com
-          </p>
-          <p>
-            <i className="icon-location"></i> 123 Street, City, Country
+            <strong>Phone: (800) 000 000</strong>
           </p>
         </div>
-
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-
-        <div className="social-media">{/* <!-- Social media links --> */}</div>
-      </section>
+        <div className="gpt3__cta-conten">
+          <form ref={form} onSubmit={sendEmail} className="message_form">
+            <label className="label">Name</label>
+            <input type="text" name="user_name" className="input" />
+            <label className="label">Email</label>
+            <input type="email" name="user_email" className="input" />
+            <label className="label">Message</label>
+            <textarea name="message" className="textarea" />
+            <input type="submit" value="Send" className="input" />
+          </form>
+        </div>
+      </div>
     </div>
-    <div className="gpt3__cta-btn">
-      <button type="button">Get Started</button>
-    </div>
-  </div>
-);
+  );
+};
 
-export default Contacts;
+export default Contact;
+

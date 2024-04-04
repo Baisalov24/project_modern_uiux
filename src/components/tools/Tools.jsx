@@ -5,19 +5,19 @@ import './tools.css';
 const Tools = () => (
   <div className="gpt3__brand section__padding">
     <div>
-      <img src={google} />
+      <img src={google} alt='Tool' />
     </div>
     <div>
-      <img src={slack} />
+      <img src={slack} alt='Tool'/>
     </div>
     <div>
-      <img src={atlassian} />
+      <img src={atlassian} alt='Tool'/>
     </div>
     <div>
-      <img src={dropbox} />
+      <img src={dropbox} alt='Tool'/>
     </div>
     <div>
-      <img src={shopify} />
+      <img src={shopify} alt='Tool'/>
     </div>
   </div>
 );

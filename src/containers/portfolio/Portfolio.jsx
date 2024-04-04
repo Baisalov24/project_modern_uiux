@@ -9,15 +9,15 @@ const Portfolio = () => {
       <p className="subtitle">This is the subtitle.</p>
       <div className="blocks-container">
         <div className="block">
-          <img src={portfolioImg} />
+          <img src={portfolioImg} alt="Description 1" />
           <p>Description of Image 1</p>
         </div>
         <div className="block">
-          <img src={portfolioImg} alt="Description Image 2" />
+          <img src={portfolioImg} alt="Description 2" />
           <p>Description of Image 2</p>
         </div>
         <div className="block">
-          <img src={portfolioImg} alt="Description Image 3" />
+          <img src={portfolioImg} alt="Description 3" />
           <p>Description of Image 3</p>
         </div>
       </div>
