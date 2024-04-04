@@ -13,41 +13,41 @@ const Footer = () => (
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>
-        <p>
+        <div>
           <a href="mailto:jetrix.webdev@gmail.com" className="gmail-button">
-            jetrix.webdev@gmail.com
+            <p>jetrix.webdev@gmail.com</p>
           </a>
-        </p>
-        <p>
+        </div>
+        <div>
           <a href="https://wa.me/+13475630993" target="_blank">
             <p>(347) 563 0993</p>
           </a>
-        </p>
-        <p>
+        </div>
+        <div>
           <a href="https://www.instagram.com/jetrix_webdev" target="_blank">
             <p>@JeTrix_webdev</p>
           </a>
-        </p>
+        </div>
       </div>
 
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
-        <p>
+        <div>
           <a href="https://wa.me/+13475630993" target="_blank">
             <p>(347) 563 0993</p>
           </a>
-        </p>
-        <p>
+        </div>
+        <div>
           <a href="mailto:jetrix.webdev@gmail.com" className="gmail-button">
-            jetrix.webdev@gmail.com
+            <p>jetrix.webdev@gmail.com</p>
           </a>
-        </p>
+        </div>
 
-        <p>
+        <div>
           <a href="https://www.instagram.com/jetrix_webdev" target="_blank">
             <p>@JeTrix_webdev</p>
           </a>
-        </p>
+        </div>
       </div>
     </div>
     <div className="gpt3__footer-copyright">
@@ -57,5 +57,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
-
