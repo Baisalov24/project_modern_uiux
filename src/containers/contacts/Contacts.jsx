@@ -94,8 +94,11 @@ const Contact = () => {
         <div className="form_right">
           <h1>Contact Us</h1>
           <form ref={form} onSubmit={handleSubmit} className="message_form">
-            <label className="label">Name</label>
+            <label htmlFor="username" className="label">
+              Name
+            </label>
             <input
+              id="username"
               className="input"
               type="text"
               name="name"
@@ -103,8 +106,11 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
-            <label className="label">Email</label>
+            <label htmlFor="useremail" className="label">
+              Email
+            </label>
             <input
+              id="useremail"
               className="input"
               type="email"
               name="email"
@@ -112,9 +118,10 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
-            <label className="label">Text</label>
+            <label htmlFor="usermessage"  className="label">Text</label>
 
             <textarea
+            id="usermessage"
               className="input"
               name="message"
               value={formData.message}
