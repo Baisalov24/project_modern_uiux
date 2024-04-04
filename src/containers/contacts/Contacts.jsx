@@ -44,7 +44,7 @@ const Contact = () => {
             <strong>Phone: (800) 000 000</strong>
           </p>
         </div>
-        <div className="gpt3__cta-conten">
+        <div className="form_right">
           <form ref={form} onSubmit={sendEmail} className="message_form">
             <label className="label">Name</label>
             <input type="text" name="user_name" className="input" />

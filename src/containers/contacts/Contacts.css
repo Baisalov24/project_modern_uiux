@@ -2,8 +2,9 @@
   background: var(--gradient-bar);
   border-radius: 1rem;
   padding: 2rem;
-  margin: 4rem;
+  margin: 2rem; 
 }
+
 .form_title {
   color: #fff;
 }
@@ -13,36 +14,19 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap; 
 }
 
-.gpt3__cta-content {
-  display: flex;
-  flex-direction: column;
-
-  text-align: left;
-  color: #fff;
-}
-
-@media screen and (max-width: 650px) {
-  .gpt3__cta {
-    flex-direction: column;
-  }
-
-  .gpt3__cta-btn {
-    margin: 2rem 0 0;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .gpt3__cta {
-    flex-direction: column;
-    margin: 4rem 2rem;
-  }
+.form_right, .form_left, .message_form {
+  flex: 1;
+  min-width: 250px; 
 }
 
 .message_form {
-  width: 400px;
+  max-width: 400px; 
+  width: 100%; 
 }
+
 .form {
   display: flex;
   align-items: flex-start;
@@ -51,52 +35,51 @@
   font-size: 16px;
 }
 
-.input {
+.input, .textarea {
   width: 100%;
-  height: 35px;
   padding: 7px;
   outline: none;
   border-radius: 5px;
   border: 1px solid rgb(220, 220, 220);
 }
-.input:focus {
+
+.input:focus, .textarea:focus {
   border: 2px solid rgba(0, 206, 158, 1);
 }
 
-.textarea {
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
-  max-height: 100px;
-  min-height: 100px;
-  padding: 7px;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid rgb(220, 220, 220);
-}
-.textarea:focus {
-  border: 2px solid rgba(0, 206, 158, 1);
-}
-
-.label {
+.label, .input[type="submit"] {
   margin-top: 1rem;
 }
 
 .input[type="submit"] {
-  margin-top: 2rem;
   cursor: pointer;
   background: rgb(249, 105, 14);
   color: white;
   border: none;
 }
 
-/* form left  */
-
-.form_left h3 {
+.form_left h3, .form_left p {
   color: white;
-  font-size: 26px;
 }
-.form_left p {
-  color: white;
-  font-size: 20px;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form_wrapper {
+    flex-direction: column; 
+    align-items: stretch; 
+  }
+
+  .form_section {
+    margin: 1rem; 
+    padding: 1rem; 
+  }
+
+  .message_form, .form_right, .form_left {
+    width: 100%; 
+    max-width: none; 
+  }
+
+  .input[type="submit"] {
+    margin-top: 1rem;
+  }
 }
