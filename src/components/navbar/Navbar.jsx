@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">JT-studio</div>
+        <div className="gpt3__navbar-links_logo gradient__text">JeTrix</div>
       </div>
       <div className="gpt3__navbar-sign">
         <p>
@@ -68,3 +68,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+

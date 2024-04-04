@@ -27,7 +27,7 @@ const AboutCompany = () => (
     <div className="gpt3__features-heading">
     <h1 className="gradient__text">About Us.</h1> <br />
       <h1 className="gradient__text">Welcome to JT-studio, where your digital aspirations take flight. Founded with a zeal for innovation, we've been at the forefront of Turnkey Web Application Development for over 5 years.</h1>
-      <p>Request Early Access to Get Started</p>
+      <p> Let's craft a custom web application that drives your business forward.</p>
     </div>
     <div className="gpt3__features-container">
       {companyData.map((item, index) => (

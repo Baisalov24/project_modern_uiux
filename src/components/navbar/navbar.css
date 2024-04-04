@@ -14,9 +14,9 @@
 }
 
 .gpt3__navbar-links_logo {
-  font-size: 22px;
-  color: white;
+  font-size: 30px;
   margin-right: 2rem;
+  font-weight: bold;
 }
 
 .gpt3__navbar-sign {

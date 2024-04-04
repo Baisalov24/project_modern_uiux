@@ -138,8 +138,12 @@
     margin-top: 1rem;
   }
 }
-
-/* footer__social  */
+.formAlert {
+  margin: 10px 0 10px;
+  color: white;
+  font-weight: bold;
+}
+/* contact us social  */
 
 .footer__social {
   display: flex;

@@ -1,25 +1,33 @@
-import React from 'react';
-import { google, slack, atlassian, dropbox, shopify } from './imports';
-import './tools.css';
+import React from "react";
+import { useState, useEffect } from "react";
+import { google, slack, atlassian, dropbox, shopify } from "./imports";
+import "./tools.css";
+const logos = [google, slack, atlassian, dropbox, shopify];
 
-const Tools = () => (
-  <div className="gpt3__brand section__padding">
-    <div>
-      <img src={google} alt='Tool' />
+const Tools = () => {
+  return (
+    <div className="carousel-container">
+      <div className="carousel-slide">
+        {logos.map((logo, index) => (
+          <img
+            src={logo}
+            alt={`Logo ${index + 1}`}
+            key={index}
+            className="carousel-logo"
+          />
+        ))}
+        {/* Дублируем логотипы для бесконечной анимации */}
+        {logos.map((logo, index) => (
+          <img
+            src={logo}
+            alt={`Logo ${index + 1}`}
+            key={`duplicate-${index}`}
+            className="carousel-logo"
+          />
+        ))}
+      </div>
     </div>
-    <div>
-      <img src={slack} alt='Tool'/>
-    </div>
-    <div>
-      <img src={atlassian} alt='Tool'/>
-    </div>
-    <div>
-      <img src={dropbox} alt='Tool'/>
-    </div>
-    <div>
-      <img src={shopify} alt='Tool'/>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Tools;

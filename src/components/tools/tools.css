@@ -1,8 +1,13 @@
 .gpt3__brand {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .gpt3__brand div {
@@ -15,3 +20,38 @@
     justify-content: center;
     align-items: center;
 }
+.tools_title {
+    color:  white;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100px; /* Регулируйте в соответствии с размером вашего контейнера */
+ margin: 0 auto;
+}
+  
+  .carousel-slide {
+    display: flex;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .carousel-logo {
+    margin-right: 30px; /* Расстояние между логотипами */
+    height: 40px; /* Регулируйте в соответствии с размером ваших логотипов */
+  }
+  

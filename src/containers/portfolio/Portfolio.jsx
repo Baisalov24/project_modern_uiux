@@ -14,21 +14,18 @@ const Portfolio = () => {
       <div className="blocks-container">
         <div className="block">
           <img src={project_1} alt="Image 1" />
-          <p>Photo description 1</p>
           <a href="https://yoga-studio-website.vercel.app/" target="_blank">
             <button className="portfolio_btn"> Visit</button>
           </a>
         </div>
         <div className="block">
           <img src={project_2} alt="Image 2" />
-          <p>photo description 2</p>
           <a href="https://gym-template-gold.vercel.app/" target="_blank">
             <button className="portfolio_btn"> Visit</button>
           </a>
         </div>
         <div className="block">
           <img src={project_3} alt="Image 3" />
-          <p>photo description 3</p>
           <a href="https://headphone-maket.vercel.app/" target="_blank">
             <button className="portfolio_btn"> Visit</button>
           </a>

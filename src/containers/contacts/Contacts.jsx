@@ -3,12 +3,33 @@ import emailjs from "@emailjs/browser";
 import "./contacts.css";
 import whatsappIcon from "../../assets/whatsapp.png";
 import instagramIcon from "../../assets/instagram.png";
+import { useState } from "react";
 
+const initialFormData = {
+  name: "",
+  email: "",
+  message: "",
+};
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const [formData, setFormData] = useState(initialFormData);
+  const [showMessage, setShowMessage] = useState(false);
+
+  const isFormValid = formData.name && formData.email && formData.message;
+
+  const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isFormValid) {
+      return;
+    }
+
+    setFormData(initialFormData);
+
+    setShowMessage(true);
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 5000);
 
     emailjs
       .sendForm(
@@ -20,7 +41,6 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
         },
         (error) => {
           console.log(error.text);
@@ -28,14 +48,22 @@ const Contact = () => {
       );
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className="form_section" id="contactUs">
       <div className="form_wrapper">
         <div className="form_left">
           <div>
-            <h3>JT-studio</h3>
+            <h3>JeTrix - Web development</h3>
             <p>
-              <a href="mailto:jetrix.webdev@gmail.com" class="gmail-button">
+              <a href="mailto:jetrix.webdev@gmail.com" className="gmail-button">
                 <strong>Email: jetrix.webdev@gmail.com</strong>
               </a>
             </p>
@@ -51,7 +79,7 @@ const Contact = () => {
               target="_blank"
               className="footer__social-link"
             >
-              <img src={whatsappIcon}  alt="whatsapp Icom" />
+              <img src={whatsappIcon} alt="whatsapp Icom" />
               <p>(347) 563 0993</p>
             </a>
             <a
@@ -65,15 +93,47 @@ const Contact = () => {
         </div>
         <div className="form_right">
           <h1>Contact Us</h1>
-          <form ref={form} onSubmit={sendEmail} className="message_form">
+          <form ref={form} onSubmit={handleSubmit} className="message_form">
             <label className="label">Name</label>
-            <input type="text" name="user_name" className="input" />
+            <input
+              className="input"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
             <label className="label">Email</label>
-            <input type="email" name="user_email" className="input" />
-            <label className="label">Message</label>
-            <textarea name="message" className="textarea" />
-            <input type="submit" value="Send" className="contactUs_btn" />
+            <input
+              className="input"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <label className="label">Text</label>
+
+            <textarea
+              className="input"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+            <button
+              className="contactUs_btn"
+              type="submit"
+              disabled={!isFormValid}
+            >
+              Submit
+            </button>
           </form>
+          {showMessage && (
+            <div>
+              <h3 className="formAlert">Form submitted successfully!</h3>
+            </div>
+          )}
         </div>
       </div>
     </div>

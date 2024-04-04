@@ -6,29 +6,48 @@ const Footer = () => (
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
         {/* <img src={gpt3Logo} alt="gpt3_logo" /> */}
-        <h1>JT-studio</h1>
+        <h1>JeTrix</h1>
         <p>
-          Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved
+          Crechterwoord J45 369 DK Jksldk, <br /> All Rights Reserved
         </p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>
-        <p>Overons</p>
-        <p>Social Media</p>
-        <p>Counters</p>
-        <p>Contact</p>
+        <p>
+          <a href="mailto:jetrix.webdev@gmail.com" className="gmail-button">
+            jetrix.webdev@gmail.com
+          </a>
+        </p>
+        <p>
+          <a href="https://wa.me/+13475630993" target="_blank">
+            <p>(347) 563 0993</p>
+          </a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/jetrix_webdev" target="_blank">
+            <p>@JeTrix_webdev</p>
+          </a>
+        </p>
       </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Company</h4>
-        <p>Terms & Conditions </p>
-        <p>Privacy Policy</p>
-        <p>Contact</p>
-      </div>
+
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
-        <p>Crechterwoord K12 182 DK Alknjkcb</p>
-        <p>085-132567</p>
-        <p>info@payme.net</p>
+        <p>
+          <a href="https://wa.me/+13475630993" target="_blank">
+            <p>(347) 563 0993</p>
+          </a>
+        </p>
+        <p>
+          <a href="mailto:jetrix.webdev@gmail.com" className="gmail-button">
+            jetrix.webdev@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <a href="https://www.instagram.com/jetrix_webdev" target="_blank">
+            <p>@JeTrix_webdev</p>
+          </a>
+        </p>
       </div>
     </div>
     <div className="gpt3__footer-copyright">
@@ -38,3 +57,5 @@ const Footer = () => (
 );
 
 export default Footer;
+
+
