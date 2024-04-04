@@ -1,6 +1,6 @@
 // src/Timeline.js
 import React, { useState, useRef, useEffect } from 'react';
-import './timeline.css';
+import '../../containers/appLifecycle/appLifecycle.css';
 
 const events = [
   { year: "Design", text: "Event 1", description: "Wireframing: Creating basic layouts of the web pages. UI/UX Design: Designing visual elements and user experience paths.Prototyping: Building clickable prototypes to simulate the user interface." },
@@ -12,7 +12,7 @@ const events = [
 ];
 
 const Timeline = () => {
-  const [selectedEventIndex, setSelectedEventIndex] = useState(0); // Default to first event
+  const [selectedEventIndex, setSelectedEventIndex] = useState(0); 
   const [progressWidth, setProgressWidth] = useState(0);
   const timelineRef = useRef(null);
   
