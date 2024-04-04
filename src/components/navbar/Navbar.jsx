@@ -11,19 +11,19 @@ const Navbar = () => {
         <div className="gpt3__navbar-links_logo gradient__text">JeTrix</div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>
+        <p className="hover-text">
           <a href="#home">Home</a>
         </p>
-        <p>
+        <p className="hover-text">
           <a href="#company">About Company</a>
         </p>
-        <p>
+        <p className="hover-text">
           <a href="#services">Services</a>
         </p>
-        <p>
+        <p className="hover-text">
           <a href="#portfolio">Portfolio</a>
         </p>
-        <p>
+        <p className="hover-text">
           <a href="#contactUs">Contact us</a>
         </p>
       </div>

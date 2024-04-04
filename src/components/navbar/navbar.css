@@ -124,3 +124,30 @@
     display: block;
   }
 }
+
+/* uderline start  */
+.hover-text {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.hover-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #AE67FA; 
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-text:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}

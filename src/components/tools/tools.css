@@ -1,8 +1,4 @@
 .gpt3__brand {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
     overflow-x: hidden;
     white-space: nowrap;
     position: relative;

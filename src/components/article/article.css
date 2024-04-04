@@ -5,6 +5,12 @@
     display: flex;
     flex-direction: column;
     background: var(--color-footer);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gpt3__blog-container_article:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .gpt3__blog-container_article-image {
