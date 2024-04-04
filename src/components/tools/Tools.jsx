@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { google, slack, atlassian, dropbox, shopify } from "./imports";
+import { react, angular, bootstrap, mocha, docker, github  } from "./imports";
 import "./tools.css";
-const logos = [google, slack, atlassian, dropbox, shopify];
+const logos = [react, angular, bootstrap, mocha, docker, github ];
 
 const Tools = () => {
   return (

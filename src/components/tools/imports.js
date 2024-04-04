@@ -1,13 +1,8 @@
-import google from '../../assets/google.png';
-import slack from '../../assets/slack.png';
-import atlassian from '../../assets/atlassian.png';
-import dropbox from '../../assets/dropbox.png';
-import shopify from '../../assets/shopify.png';
+import react from "../../assets/tools/react.png";
+import angular from "../../assets/tools/angular.png";
+import bootstrap from "../../assets/tools/bootstrap.png";
+import mocha from "../../assets/tools/mocha.png";
+import docker from "../../assets/tools/docker.png";
+import github from "../../assets/tools/github.png";
 
-export {
-  google,
-  slack,
-  atlassian,
-  dropbox,
-  shopify,
-};
+export { react, angular, bootstrap, mocha, docker, github };
