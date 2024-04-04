@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contacts.css";
+import whatsappIcon from "../../assets/whatsapp.png";
+import instagramIcon from "../../assets/instagram.png";
 
 const Contact = () => {
   const form = useRef();
@@ -28,23 +30,41 @@ const Contact = () => {
 
   return (
     <div className="form_section" id="contactUs">
-      <div className="form_title">
-        <h1>Contact Us</h1>
-      </div>
-
       <div className="form_wrapper">
         <div className="form_left">
-          <h3 className="color_sec py-4">JT-studio</h3>
-          <br />
-          <br />
-          <p>
-            <strong>Email: jtstudio@gmail.com</strong>
-          </p>
-          <p>
-            <strong>Phone: (800) 000 000</strong>
-          </p>
+          <div>
+            <h3>JT-studio</h3>
+            <p>
+              <a href="mailto:jetrix.webdev@gmail.com" class="gmail-button">
+                <strong>Email: jetrix.webdev@gmail.com</strong>
+              </a>
+            </p>
+            <p>
+              <a href="tel:+13475630993">
+                <strong>Phone: (347) 563 0993</strong>
+              </a>
+            </p>
+          </div>
+          <div className="footer__social">
+            <a
+              href="https://wa.me/+13475630993"
+              target="_blank"
+              className="footer__social-link"
+            >
+              <img src={whatsappIcon}  alt="whatsapp Icom" />
+              <p>(347) 563 0993</p>
+            </a>
+            <a
+              href="https://www.instagram.com/jetrix_webdev"
+              target="_blank"
+              className="footer__social-link"
+            >
+              <img src={instagramIcon} alt="" /> <p>@JeTrix_webdev</p>
+            </a>
+          </div>
         </div>
         <div className="form_right">
+          <h1>Contact Us</h1>
           <form ref={form} onSubmit={sendEmail} className="message_form">
             <label className="label">Name</label>
             <input type="text" name="user_name" className="input" />
@@ -52,7 +72,7 @@ const Contact = () => {
             <input type="email" name="user_email" className="input" />
             <label className="label">Message</label>
             <textarea name="message" className="textarea" />
-            <input type="submit" value="Send" className="input" />
+            <input type="submit" value="Send" className="contactUs_btn" />
           </form>
         </div>
       </div>
@@ -61,4 +81,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

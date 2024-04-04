@@ -13,9 +13,9 @@ const Header = () => (
       </p>
 
       <div className="gpt3__header-content__input">
-        <button type="button">
-          <a href="#contactUs">Get In Touch</a>{" "}
-        </button>
+        <a href="#contactUs">
+          <button className="header_btn">Get In Touch</button>
+        </a>
       </div>
     </div>
 
