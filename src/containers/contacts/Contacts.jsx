@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "./contacts.css";
+import "../contacts/contacts.css"
 import whatsappIcon from "../../assets/whatsapp.png";
 import instagramIcon from "../../assets/instagram.png";
 import { useState } from "react";
