@@ -19,12 +19,12 @@ const Footer = () => (
           </a>
         </div>
         <div>
-          <a href="https://wa.me/+13475630993" target="_blank">
+          <a href="https://wa.me/+13475630993" target="_blank" rel="noopener noreferrer">
             <p>(347) 563 0993</p>
           </a>
         </div>
         <div>
-          <a href="https://www.instagram.com/jetrix_webdev" target="_blank">
+          <a href="https://www.instagram.com/jetrix_webdev" target="_blank" rel="noopener noreferrer">
             <p>@JeTrix_webdev</p>
           </a>
         </div>
@@ -33,7 +33,7 @@ const Footer = () => (
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
         <div>
-          <a href="https://wa.me/+13475630993" target="_blank">
+          <a href="https://wa.me/+13475630993" target="_blank" rel="noopener noreferrer">
             <p>(347) 563 0993</p>
           </a>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => (
         </div>
 
         <div>
-          <a href="https://www.instagram.com/jetrix_webdev" target="_blank">
+          <a href="https://www.instagram.com/jetrix_webdev" target="_blank" rel="noopener noreferrer">
             <p>@JeTrix_webdev</p>
           </a>
         </div>

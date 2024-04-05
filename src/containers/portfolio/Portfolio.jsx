@@ -13,20 +13,20 @@ const Portfolio = () => {
       </h2>
       <div className="blocks-container">
         <div className="block">
-          <img src={project_1} alt="Image 1" />
-          <a href="https://yoga-studio-website.vercel.app/" target="_blank">
+          <img src={project_1} alt="Project-1" />
+          <a href="https://yoga-studio-website.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button className="portfolio_btn"> Visit</button>
           </a>
         </div>
         <div className="block">
-          <img src={project_2} alt="Image 2" />
-          <a href="https://gym-template-gold.vercel.app/" target="_blank">
+          <img src={project_2} alt="Project-2" />
+          <a href="https://gym-template-gold.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button className="portfolio_btn"> Visit</button>
           </a>
         </div>
         <div className="block">
-          <img src={project_3} alt="Image 3" />
-          <a href="https://headphone-maket.vercel.app/" target="_blank">
+          <img src={project_3} alt="Project-3" />
+          <a href="https://headphone-maket.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button className="portfolio_btn"> Visit</button>
           </a>
         </div>

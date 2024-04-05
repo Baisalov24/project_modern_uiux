@@ -8,7 +8,7 @@ const AppLifecycle = () => (
     <div className="appLifecycle_topBlock">
       <div>
         <h1 className="gradient__text">
-          Develope web application <br /> from scratch
+          Develop web application <br /> from scratch
         </h1>
       </div>
       <div className="appLifecycle_img">

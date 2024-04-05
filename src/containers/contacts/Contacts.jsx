@@ -78,6 +78,7 @@ const Contact = () => {
               href="https://wa.me/+13475630993"
               target="_blank"
               className="footer__social-link"
+              rel="noopener noreferrer"
             >
               <img src={whatsappIcon} alt="whatsapp Icom" />
               <p>(347) 563 0993</p>
@@ -86,6 +87,7 @@ const Contact = () => {
               href="https://www.instagram.com/jetrix_webdev"
               target="_blank"
               className="footer__social-link"
+              rel="noopener noreferrer"
             >
               <img src={instagramIcon} alt="" /> <p>@JeTrix_webdev</p>
             </a>

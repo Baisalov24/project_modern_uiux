@@ -5,6 +5,10 @@ import "./navbar.css";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  const closeMenu = () => {
+    setToggleMenu(false);
+  };
+
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
@@ -44,19 +48,19 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
-              <p>
+              <p onClick={closeMenu}>
                 <a href="#home">Home</a>
               </p>
-              <p>
+              <p onClick={closeMenu}>
                 <a href="#company">About Company</a>
               </p>
-              <p>
+              <p onClick={closeMenu}>
                 <a href="#services">Services</a>
               </p>
-              <p>
+              <p onClick={closeMenu}>
                 <a href="#portfolio">Portfolio</a>
               </p>
-              <p>
+              <p onClick={closeMenu}>
                 <a href="#contactUs">Contact us</a>
               </p>
             </div>
@@ -68,7 +72,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
