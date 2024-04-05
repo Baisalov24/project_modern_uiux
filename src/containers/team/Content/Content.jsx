@@ -1,53 +1,58 @@
-import { GradientTitle } from '../GradientTitle/GradientTitle'
-import { Slider } from '../Slider/Slider'
-import photo_1 from '../../../assets/images/1_photo.png'
-import photo_2 from '../../../assets/images/2_photo.png'
-import photo_3 from '../../../assets/images/3_photo.png'
-import photo_4 from '../../../assets/images/4_photo.png'
-import photo_5 from '../../../assets/images/5_photo.png'
-import photo_6 from '../../../assets/images/6_photo.png'
-import './Content.css'
+import { GradientTitle } from "../GradientTitle/GradientTitle";
+import { Slider } from "../Slider/Slider";
+import photo_1 from "../../../assets/staff/person-1.png";
+import photo_2 from "../../../assets/staff/person-2.png";
+import photo_3 from "../../../assets/staff/person-3.png";
+import photo_4 from "../../../assets/staff/person-4.png";
+import photo_5 from "../../../assets/staff/person-5.png";
+import photo_6 from "../../../assets/staff/person-6.png";
+
+import "./Content.css";
 
 const sliderData = [
   {
-    label: 'CEO AND COFOUNDER, ARKETA',
-    title: 'Rachel Lea Fishman',
-    img: photo_1
+    label: "CEO AND COFOUNDER, JeTrix",
+    title: "James Anderson",
+    img: photo_1,
   },
   {
-    label: 'CEO AND CO-FOUNDER, FORMA',
-    title: 'Jason Fan',
-    img: photo_2
+    label: "Front-End Developer",
+    title: "David Williams",
+    img: photo_2,
   },
   {
-    label: 'CEO, OPENAI',
-    title: 'Sam Altman',
-    img: photo_3
+    label: "UI/UX Designer",
+    title: "Anh Nguyen",
+    img: photo_3,
   },
   {
-    label: 'SVP OF PRODUCT, JOBBER',
-    title: 'Jeff Sheclock',
-    img: photo_4
+    label: "Back-End Developer",
+    title: "Luca Rossi",
+    img: photo_4,
   },
   {
-    label: 'HEAD OF STRATEGY, SARDINE',
-    title: 'Simon Taylor',
-    img: photo_5
+    label: "Back-End Developer",
+    title: "Daniel Martinez",
+    img: photo_5,
   },
   {
-    label: 'HEAD OF GLOBAL SALES, STRIPE',
-    title: `Eileen O'Mara`,
-    img: photo_6
+    label: "DevOps Engineer ",
+    title: 'Matteo Marco',
+    img: photo_6,
   },
-]
+];
 
- const Content = () => (
+const Content = () => (
   <div className="content">
     <GradientTitle>Meet our Team</GradientTitle>
     <div className="content__grid">
-      <p>Our team lineup comprises leaders from Stripe and beyond, who’ll share knowledge and advice on the most pressing topics facing companies today. Stay tuned for more announcements.</p>
+      <p>
+        Get Acquainted with Our Team of Full Stack Developers Who Bring Your Web
+        Applications to Life, from Conceptualization Through to Deployment and
+        Beyond.
+      </p>
     </div>
     <Slider data={sliderData} />
   </div>
-)
+);
 export default Content;

@@ -14,30 +14,30 @@ const Services = () => (
       <div className="gpt3__blog-container_groupA">
         <Article
           imgUrl={blog01}
-          text="Unique UI/UX Design"
-          description="Our design team focuses on creating intuitive and aesthetically pleasing interfaces that provide seamless user experiences..."
+          text="Requirement Analysis"
+          description="Our team begins by conducting a thorough analysis of your requirements. We excel in understanding and articulating your needs, ensuring that every feature and function of the web application is planned to meet your business objectives. Our expertise in requirement gathering and analysis sets us apart, as we meticulously document every detail to pave the way for a successful project."
         />
       </div>
       <div className="gpt3__blog-container_groupB">
         <Article
           imgUrl={blog02}
           text="Unique UI/UX Design"
-          description="Our design team focuses on creating intuitive and aesthetically pleasing interfaces that provide seamless user experiences..."
+          description="In the design phase, our creative team crafts visually appealing and user-friendly designs. We're experts in creating intuitive UI/UX that enhances user engagement and satisfaction."
         />
         <Article
           imgUrl={blog03}
           text="Custom Web Application Development"
-          description="We craft bespoke web applications tailored to your unique business needs, ensuring they're scalable, responsive, and user-friendly..."
+          description="Our development team is second to none, comprising seasoned professionals who write clean, efficient, and scalable code. We specialize in both front-end and back-end development, utilizing the latest technologies and frameworks to build robust web applications. "
         />
         <Article
           imgUrl={blog04}
-          text="E-Commerce Solutions"
-          description="From online storefronts to complex B2B platforms, we build e-commerce systems that are secure, intuitive, and conversion-focused..."
+          text="Testing and Quality Assurance"
+          description="Quality is our top priority. Our QA team rigorously tests the web application to identify and fix any bugs, ensuring the software runs smoothly across all devices and browsers."
         />
         <Article
           imgUrl={blog05}
-          text="Maintenance and Support"
-          description=" Beyond development, we offer ongoing maintenance and support to ensure your web application remains up-to-date and operates smoothly..."
+          text="Deployment"
+          description="Deploying a web application is a critical step, and our team excels in ensuring a smooth launch. We handle every aspect of deployment, from configuring servers to setting up databases and ensuring the application is optimized for performance."
         />
       </div>
     </div>

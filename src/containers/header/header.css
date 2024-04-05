@@ -54,17 +54,12 @@
 }
 @keyframes pulse {
   0% {
-    transform: scale(1); /* Исходный размер */
-    /* box-shadow: 0 0 0 rgba(0, 0, 0, 0); */
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.2); /* Увеличиваем размер на 20% */
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  */
+    transform: scale(1.2);
   }
 }
-/* .gpt3__header-image img:hover {
-  transform: scale(1.1); 
-} */
 
 @media screen and (max-width: 1050px) {
   .gpt3__header {
@@ -116,31 +111,29 @@
 
 /* btn start  */
 
-.header_btn{
-
+.header_btn {
   font-family: Roboto, sans-serif;
   font-weight: 0;
   font-size: 18px;
   color: #fff;
-  background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+  background: linear-gradient(90deg, #0066cc 0%, #c500cc 100%);
   padding: 10px 30px;
   border: 2px solid #0066cc;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   border-radius: 50px;
-  transition : 1000ms;
+  transition: 1000ms;
   transform: translateY(0);
   display: flex;
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  }
-  
-  .header_btn:hover{
-  
-  transition : 1000ms;
+}
+
+.header_btn:hover {
+  transition: 1000ms;
   padding: 10px 50px;
-  transform : translateY(-0px);
-  background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+  transform: translateY(-0px);
+  background: linear-gradient(90deg, #0066cc 0%, #c500cc 100%);
   color: #0066cc;
   border: solid 2px #0066cc;
-  }
+}
